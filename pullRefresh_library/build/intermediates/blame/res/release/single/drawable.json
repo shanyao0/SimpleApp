@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable\\nx_gif_refreshing.xml",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable\\nx_gif_refreshing.xml"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_top.xml",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable\\indicator_bg_top.xml"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable\\indicator_bg_bottom.xml",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable\\indicator_bg_bottom.xml"
+    }
+]

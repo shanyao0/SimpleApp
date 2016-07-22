@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SimpleApp.iml" filepath="$PROJECT_DIR$/SimpleApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pullRefresh_library/pullRefresh_library.iml" filepath="$PROJECT_DIR$/pullRefresh_library/pullRefresh_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tabpagerindictor/tabpagerindictor.iml" filepath="$PROJECT_DIR$/tabpagerindictor/tabpagerindictor.iml" />
+    </modules>
+  </component>
+</project>

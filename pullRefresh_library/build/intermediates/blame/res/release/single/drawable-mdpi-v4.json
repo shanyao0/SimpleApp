@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\indicator_arrow.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-mdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_flip.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-mdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-mdpi-v4\\default_ptr_rotate.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-mdpi\\default_ptr_rotate.png"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\indicator_arrow.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-hdpi\\indicator_arrow.png"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\nx_gif_refreshing2.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-hdpi\\nx_gif_refreshing2.png"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\default_ptr_flip.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-hdpi\\default_ptr_flip.png"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\default_ptr_rotate.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-hdpi\\default_ptr_rotate.png"
+    },
+    {
+        "merged": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\nx_gif_refreshing1.png",
+        "source": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\drawable-hdpi\\nx_gif_refreshing1.png"
+    }
+]

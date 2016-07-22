@@ -1,0 +1,311 @@
+[
+    {
+        "outputFile": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 1515,
+                    "endColumn": 63,
+                    "endOffset": 1574
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 229,
+                        "endColumn": 63,
+                        "endOffset": 288
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 1579,
+                    "endColumn": 63,
+                    "endOffset": 1638
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 294,
+                        "endColumn": 63,
+                        "endOffset": 353
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 1643,
+                    "endColumn": 54,
+                    "endOffset": 1693
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 115,
+                        "endColumn": 54,
+                        "endOffset": 165
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 1698,
+                    "endColumn": 56,
+                    "endOffset": 1750
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 171,
+                        "endColumn": 56,
+                        "endOffset": 223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 1755,
+                    "endColumn": 54,
+                    "endOffset": 1805
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 54,
+                        "endOffset": 109
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 1810,
+                    "endColumn": 37,
+                    "endOffset": 1843
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 37,
+                        "endOffset": 92
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1848,
+                    "endColumn": 39,
+                    "endOffset": 1883
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 136,
+                        "endColumn": 39,
+                        "endOffset": 171
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1888,
+                    "endColumn": 38,
+                    "endOffset": 1922
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 177,
+                        "endColumn": 38,
+                        "endOffset": 211
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1927,
+                    "endColumn": 36,
+                    "endOffset": 1959
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 98,
+                        "endColumn": 36,
+                        "endOffset": 130
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1964,
+                    "endColumn": 104,
+                    "endOffset": 2064
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 474,
+                        "endColumn": 104,
+                        "endOffset": 574
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 2069,
+                    "endColumn": 113,
+                    "endOffset": 2178
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 689,
+                        "endColumn": 113,
+                        "endOffset": 798
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 2183,
+                    "endColumn": 107,
+                    "endOffset": 2286
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 580,
+                        "endColumn": 107,
+                        "endOffset": 683
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 2291,
+                    "endColumn": 71,
+                    "endOffset": 2358
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 135,
+                        "endColumn": 71,
+                        "endOffset": 202
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 2363,
+                    "endColumn": 74,
+                    "endOffset": 2433
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 74,
+                        "endOffset": 129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 2438,
+                    "endColumn": 69,
+                    "endOffset": 2503
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 287,
+                        "endColumn": 69,
+                        "endOffset": 352
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 2508,
+                    "endColumn": 77,
+                    "endOffset": 2581
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 208,
+                        "endColumn": 77,
+                        "endOffset": 281
+                    }
+                }
+            }
+        ]
+    }
+]

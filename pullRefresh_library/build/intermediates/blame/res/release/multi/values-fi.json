@@ -1,0 +1,121 @@
+[
+    {
+        "outputFile": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\values-fi\\values-fi.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 90,
+                    "endOffset": 141
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-fi\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 412,
+                        "endColumn": 90,
+                        "endOffset": 498
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 146,
+                    "endColumn": 113,
+                    "endOffset": 255
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-fi\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 613,
+                        "endColumn": 113,
+                        "endOffset": 722
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 260,
+                    "endColumn": 107,
+                    "endOffset": 363
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-fi\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 504,
+                        "endColumn": 107,
+                        "endOffset": 607
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 368,
+                    "endColumn": 78,
+                    "endOffset": 442
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-fi\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 59,
+                        "endColumn": 78,
+                        "endOffset": 133
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 447,
+                    "endColumn": 73,
+                    "endOffset": 516
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-fi\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 221,
+                        "endColumn": 73,
+                        "endOffset": 290
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 521,
+                    "endColumn": 80,
+                    "endOffset": 597
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-fi\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 139,
+                        "endColumn": 80,
+                        "endOffset": 215
+                    }
+                }
+            }
+        ]
+    }
+]

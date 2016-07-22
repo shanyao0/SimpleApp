@@ -1,0 +1,64 @@
+[
+    {
+        "outputFile": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\build\\intermediates\\res\\merged\\release\\values-nl\\values-nl.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 78,
+                    "endOffset": 129
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-nl\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 2,
+                        "startOffset": 55,
+                        "endColumn": 76,
+                        "endOffset": 129
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 134,
+                    "endColumn": 67,
+                    "endOffset": 197
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-nl\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 2,
+                        "startOffset": 217,
+                        "endColumn": 65,
+                        "endOffset": 280
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 202,
+                    "endColumn": 84,
+                    "endOffset": 282
+                },
+                "from": {
+                    "file": "G:\\myprogram\\SimpleApp\\pullRefresh_library\\res\\values-nl\\pull_refresh_strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 2,
+                        "startOffset": 133,
+                        "endColumn": 82,
+                        "endOffset": 213
+                    }
+                }
+            }
+        ]
+    }
+]

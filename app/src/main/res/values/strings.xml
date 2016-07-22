@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">华清停车管家</string>
+    <!--运营中心-->
+    <array name="operation_center">
+        <item>异常开闸</item>
+        <item>出入记录</item>
+        <item>在场车辆</item>
+        <item>僵尸车辆</item>
+        <item>缴费记录</item>
+    </array>
+    <!--消费中心-->
+    <array name="consume_center">
+        <item>会员订单</item>
+        <item>停车订单</item>
+        <item>商家订单</item>
+        <item>餐停订单</item>
+    </array>
+    <!--管理中心-->
+    <array name="manager_center">
+        <item>会员管理</item>
+        <item>商家管理</item>
+    </array>
+    <!--数据中心-->
+    <array name="data_center">
+        <item>收费统计</item>
+        <item>车次统计</item>
+        <item>收入分析</item>
+        <item>车次分析</item>
+    </array>
+</resources>
