@@ -8,7 +8,7 @@ import shanyao.simpleapp.application.SYApplication;
 
 public class ShareUtils {
 
-    private static final String NAME = "huaching";
+    private static final String NAME = "shanyao";
     private static SharedPreferences sp = null;
     private static Context context = SYApplication.getContext();
     /**

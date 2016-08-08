@@ -13,17 +13,17 @@ import shanyao.simpleapp.utils.ConstantUtils;
  */
 public class OnParkCarFragment extends BaseFragment {
     @Override
+    protected Object requestData() {
+        return ConstantUtils.STATE_FAILED;
+    }
+
+    @Override
     protected View getSuccessView() {
         TextView view = new TextView(getActivity());
         view.setText("在场车辆");
         view.setTextColor(Color.RED);
         view.setTextSize(50);
         return view;
-    }
-
-    @Override
-    protected Object requestData() {
-        return ConstantUtils.STATE_SUCCESSED;
     }
 
     @Override

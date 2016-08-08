@@ -13,17 +13,17 @@ import shanyao.simpleapp.utils.ConstantUtils;
  */
 public class OutInRecordFragment extends BaseFragment {
     @Override
+    protected Object requestData() {
+        return ConstantUtils.STATE_LOADING;
+    }
+
+    @Override
     protected View getSuccessView() {
         TextView view = new TextView(getActivity());
         view.setText("出入记录");
         view.setTextColor(Color.RED);
         view.setTextSize(50);
         return view;
-    }
-
-    @Override
-    protected Object requestData() {
-        return ConstantUtils.STATE_SUCCESSED;
     }
 
     @Override
