@@ -1,6 +1,7 @@
 package shanyao.simpleapp.activity;
 
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
@@ -26,6 +27,7 @@ public class MainActivity extends BaseActivity {
     NoScrollViewPager viewpager;
     @Bind(R.id.home_title)
     TextView homeTitle;
+    ImageView imageView;
 
     private MainPagerAdapter adapter;
 
@@ -49,15 +51,15 @@ public class MainActivity extends BaseActivity {
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 switch (checkedId) {
                     case R.id.bottom_main:
-                        viewpager.setCurrentItem(0,false);
+                        viewpager.setCurrentItem(0, false);
                         homeTitle.setText("首页");
                         break;
                     case R.id.bottom_park:
-                        viewpager.setCurrentItem(1,false);
+                        viewpager.setCurrentItem(1, false);
                         homeTitle.setText("停车场");
                         break;
                     case R.id.bottom_me:
-                        viewpager.setCurrentItem(2,false);
+                        viewpager.setCurrentItem(2, false);
                         homeTitle.setText("我");
                         break;
                 }

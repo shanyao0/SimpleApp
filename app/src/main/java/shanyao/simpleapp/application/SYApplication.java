@@ -7,6 +7,7 @@ import android.os.Handler;
 public class SYApplication extends Application {
     private static Context mContext;
     private static Handler mHandler;
+
     @Override
     public void onCreate() {
         super.onCreate();

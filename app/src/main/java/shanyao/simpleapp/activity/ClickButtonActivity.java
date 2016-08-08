@@ -22,7 +22,6 @@ import shanyao.simpleapp.fragment.FragmentFactory;
  */
 public class ClickButtonActivity extends BaseActivity {
 
-
     FragmentManager fm;
     public Intent intent;
     public FragmentTransaction ft;
@@ -41,7 +40,6 @@ public class ClickButtonActivity extends BaseActivity {
 
     public int resId;
     public String id;
-    public String parkName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,8 +53,8 @@ public class ClickButtonActivity extends BaseActivity {
         if (intent.getExtras() != null) {
             resId = intent.getExtras().getInt("resId");
         }
+        // 这里需要传递其他值可以自己定义
         id = intent.getStringExtra("id");
-        parkName = intent.getStringExtra("parkName");
         /**
          * 根据传递过来的不同的资源id值设置不同的fragment
          */
@@ -72,38 +70,4 @@ public class ClickButtonActivity extends BaseActivity {
             }
         });
     }
-
-    public void setResult(String data) {
-        // 新建一个intent对象
-        Intent intent1 = new Intent();
-        intent1.putExtra("data", data);
-        setResult(0, intent1);
-        finish();
-    }
-
-    public void setResultAndCode(int resultCode, String data) {
-        // 新建一个intent对象
-        Intent intent1 = new Intent();
-        intent1.putExtra("data", data);
-        setResult(resultCode, intent1);
-        finish();
-    }
-
 }
-
-    /*
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        LogUtils.i("jam", "OnKey事件");
-        if(keyCode ==  event.KEYCODE_BACK){
-            if(f instanceof UserInfoFragment){
-                return ((UserInfoFragment) f).onKeyDown(keyCode, event);
-            }
-        }
-
-        return super.onKeyDown(keyCode, event);
-    }
-
-    *
-    */

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">华清停车管家</string>
+    <string name="app_name">SimpleApp</string>
     <!--运营中心-->
     <array name="operation_center">
         <item>异常开闸</item>

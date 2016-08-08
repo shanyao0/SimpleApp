@@ -42,7 +42,7 @@ public abstract class BasePagerFragment extends Fragment {
     private void initViewPager() {
         adapter = new BasePagerAdapter(getChildFragmentManager());
         viewPager.setAdapter(adapter);
-        viewPager.setOffscreenPageLimit(1);
+        viewPager.setOffscreenPageLimit(10);
         indicator.setViewPager(viewPager);
         setIndicator();
     }
@@ -77,7 +77,7 @@ public abstract class BasePagerFragment extends Fragment {
     protected void setIndicator() {
         indicator.setIndicatorMode(TabPageIndicator.IndicatorMode.MODE_WEIGHT_NOEXPAND_SAME);
         indicator.setDividerColor(Color.parseColor("#dcdcdc"));// 设置分割线的颜色
-        indicator.setDividerPadding(CommonUtils.dip2px(SYApplication.getContext(), 10));
+        indicator.setDividerPadding(CommonUtils.dip2px(SYApplication.getContext(), 0));
         indicator.setIndicatorColor(Color.parseColor("#44A43B"));// 设置底部横线的颜色
         indicator.setTextColorSelected(Color.parseColor("#44A43B"));// 设置tab标题选中的颜色
         indicator.setTextColor(Color.parseColor("#797979"));// 设置tab标题未被选中的颜色

@@ -16,7 +16,7 @@ import shanyao.simpleapp.utils.ConstantUtils;
  * @author Administrator
  */
 public abstract class ContentPage extends FrameLayout {
-    // 实现父类的构造方法的快捷键：alt+shift+s->c
+
     public ContentPage(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         initContentPage();
