@@ -5,20 +5,14 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import shanyao.simpleapp.R;
 import shanyao.simpleapp.bean.ParkBean;
 import shanyao.simpleapp.fragment.BaseListFragment;
-import shanyao.simpleapp.http.HttpMethods;
-import shanyao.simpleapp.http.ResponseSubscribe;
 import shanyao.simpleapp.utils.ConstantUtils;
-import shanyao.simpleapp.utils.JsonParseUtil;
-import shanyao.simpleapp.utils.LogUtils;
 
 
 /**
@@ -34,14 +28,13 @@ public class ParkListFragment extends BaseListFragment<ParkBean> {
         params.put("rows", String.valueOf(ConstantUtils.PAGER_ROWS));
         params.put("latitude", String.valueOf(39.861716));
         params.put("longitude", String.valueOf(116.426576));
-        new HttpMethods().getPark(params,new ResponseSubscribe<List<ParkBean>>() {
-            @Override
-            public void onNext(List<ParkBean> parkBeen) {
-                list = (ArrayList<ParkBean>) parkBeen;
-                LogUtils.e("zs", JsonParseUtil.getJson(parkBeen));
-                refreshPage(ConstantUtils.STATE_SUCCESSED);
-            }
-        });
+//        new HttpApis().getPark(params,new RefreshSubscribe<List<ParkBean>>(this) {
+//            @Override
+//            public void onNext(List<ParkBean> parkBeen) {
+//                list = (ArrayList<ParkBean>) parkBeen;
+//                refreshPage(ConstantUtils.STATE_SUCCESSED);
+//            }
+//        });
         return ConstantUtils.STATE_LOADING;
     }
 

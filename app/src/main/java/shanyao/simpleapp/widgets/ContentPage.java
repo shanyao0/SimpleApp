@@ -57,7 +57,7 @@ public abstract class ContentPage extends FrameLayout {
     private View successView;// 加载数据成功的View
 
     /**
-     * 初始化COntentPage
+     * 初始化ContentPage
      */
     private void initContentPage() {
         //2.显示一下默认的VIew
@@ -70,8 +70,6 @@ public abstract class ContentPage extends FrameLayout {
      * 向服务器请求数据，然后根据请求回来的数据刷新page
      */
     public void loadDataAndRefreshPage() {
-        //模拟请求服务器的延时
-//		SystemClock.sleep(1000);
 
         //1.获取从服务器请求回来的数据对象
         Object data = loadData();

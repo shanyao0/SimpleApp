@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:background="#F0F0F0"
     android:orientation="vertical">
-
+    <!--统一的ActionBar风格-->
     <RelativeLayout
         android:id="@+id/rl_actionbar"
         android:layout_width="match_parent"
@@ -50,7 +50,7 @@
             android:visibility="invisible" />
 
     </RelativeLayout>
-
+    <!--Fragment容器-->
     <FrameLayout
         android:id="@+id/fl_click_button"
         android:layout_width="match_parent"

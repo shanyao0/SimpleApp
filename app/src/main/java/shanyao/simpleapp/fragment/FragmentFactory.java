@@ -25,7 +25,6 @@ import shanyao.simpleapp.fragment.main.operation.PayRecordFragment;
 import shanyao.simpleapp.fragment.main.operation.UnusualOpenFragment;
 import shanyao.simpleapp.fragment.me.MeFragment;
 import shanyao.simpleapp.fragment.park.ParkListFragment;
-import shanyao.simpleapp.utils.LogUtils;
 
 
 /**
@@ -89,23 +88,18 @@ public class FragmentFactory {
         switch (position) {
             case 0:// 异常开闸
                 fragment = new UnusualOpenFragment();
-                LogUtils.e("zs", position + "------UnusualOpenFragment");
                 break;
             case 1:// 出入记录
                 fragment = new OutInRecordFragment();
-                LogUtils.e("zs", position + "------OutInRecordFragment");
                 break;
             case 2:// 在场车辆
                 fragment = new OnParkCarFragment();
-                LogUtils.e("zs", position + "------OnParkCarFragment");
                 break;
             case 3:// 僵尸车辆
                 fragment = new CorpseCarFragment();
-                LogUtils.e("zs", position + "------CorpseCarFragment");
                 break;
             case 4:// 缴费记录
                 fragment = new PayRecordFragment();
-                LogUtils.e("zs", position + "------PayRecordFragment");
                 break;
         }
         return fragment;

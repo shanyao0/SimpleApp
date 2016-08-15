@@ -14,8 +14,9 @@ import butterknife.ButterKnife;
 import shanyao.simpleapp.R;
 import shanyao.simpleapp.bean.ParkBean;
 import shanyao.simpleapp.fragment.BaseListFragment;
-import shanyao.simpleapp.http.HttpMethods;
-import shanyao.simpleapp.http.ProgressSubscribe;
+import shanyao.simpleapp.http.HttpApis;
+import shanyao.simpleapp.http.OnSubscribeListener;
+import shanyao.simpleapp.http.RefreshSubscribe;
 import shanyao.simpleapp.http.ResponseSubscribe;
 import shanyao.simpleapp.utils.ConstantUtils;
 import shanyao.simpleapp.utils.JsonParseUtil;
@@ -26,17 +27,15 @@ import shanyao.simpleapp.utils.LogUtils;
  * Created by zs on 2016/5/9.
  */
 public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
-
+    private int page = 2;
     @Override
     protected Object requestData() {
-        new HttpMethods().getPark(getParams(), new ResponseSubscribe<List<ParkBean>>() {
+        new HttpApis().getPark(getParams(1), addSubscriber(new ResponseSubscribe<List<ParkBean>>(this) {
             @Override
             public void onNext(List<ParkBean> parkBeen) {
                 list = (ArrayList<ParkBean>) parkBeen;
-                LogUtils.e("zs", JsonParseUtil.getJson(parkBeen));
-                refreshPage(ConstantUtils.STATE_SUCCESSED);
             }
-        });
+        }));
         return ConstantUtils.STATE_LOADING;
     }
 
@@ -69,22 +68,25 @@ public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
 
     @Override
     protected void setRefresh() {
-        new HttpMethods().getPark(getParams(), new ProgressSubscribe<List<ParkBean>>() {
+        new HttpApis().getPark(getParams(1), addSubscriber(new RefreshSubscribe<>(this, true, new OnSubscribeListener<List<ParkBean>>() {
             @Override
             public void onNext(List<ParkBean> parkBeen) {
-                list.clear();
                 list = (ArrayList<ParkBean>) parkBeen;
-                setList(list);
-                adapter.notifyDataSetChanged();
-                refreshListView.onRefreshComplete();
+                page = 2;
                 LogUtils.e("zs", JsonParseUtil.getJson(parkBeen));
             }
-        });
+        })));
     }
 
     @Override
     protected void loadMore() {
-
+        new HttpApis().getPark(getParams(page), addSubscriber(new RefreshSubscribe<>(this, false, new OnSubscribeListener<List<ParkBean>>() {
+            @Override
+            public void onNext(List<ParkBean> parkBeen) {
+                list.addAll(parkBeen);
+                page++;
+            }
+        })));
     }
 
     @Override
@@ -120,9 +122,9 @@ public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
         }
     }
 
-    private HashMap<String, String> getParams() {
-        final HashMap<String, String> params = new HashMap<>();
-        params.put("page", String.valueOf(1));
+    private HashMap<String, String> getParams(int page) {
+        HashMap<String, String> params = new HashMap<>();
+        params.put("page", String.valueOf(page));
         params.put("sortType", String.valueOf(1));
         params.put("rows", String.valueOf(ConstantUtils.PAGER_ROWS));
         params.put("latitude", String.valueOf(39.861716));

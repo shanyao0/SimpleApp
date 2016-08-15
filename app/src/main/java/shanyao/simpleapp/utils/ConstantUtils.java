@@ -19,7 +19,7 @@ public interface ConstantUtils {
     /**
      * 界面中的一些常亮
      */
-    int MAX_ITEM_LOAD_MORE = 10;// 当首次请求数据超过条后开启加载更多功能
-    int PAGER_ROWS = 10;// 每一页的数据
+    int MAX_ITEM_LOAD_MORE = 5;// 当首次请求数据超过条后开启加载更多功能
+    int PAGER_ROWS = 7;// 每一页的数据
     String EXIT_APP = "exit_app";// 退出登陆
 }

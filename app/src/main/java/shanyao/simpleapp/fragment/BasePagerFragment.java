@@ -52,12 +52,12 @@ public abstract class BasePagerFragment extends Fragment {
 
         public BasePagerAdapter(FragmentManager fm) {
             super(fm);
-            this.titles = setTitles();
+            this.titles = setTitles();// 调用setTitles()抽象方法，让子类返回具体的标题数据
         }
 
         @Override
         public Fragment getItem(int position) {
-            return setFragment(position);
+            return setFragment(position);// 调用setFragment()抽象方法，让子类返回具体的Fragment对象
         }
 
         @Override

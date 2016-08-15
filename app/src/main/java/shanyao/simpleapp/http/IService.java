@@ -11,6 +11,7 @@ import shanyao.simpleapp.bean.ParkBean;
 
 /**
  * Created by zs on 2016/8/5.
+ * 接口类的服务
  */
 public class IService {
     public interface IParking{

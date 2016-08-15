@@ -1,9 +1,7 @@
 package shanyao.simpleapp.fragment;
 
 import android.content.Context;
-import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.Nullable;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -30,16 +28,16 @@ public abstract class BaseListFragment<T> extends BaseFragment {
     public  Handler handler;
 
     @Override
-    public void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        initPullToRefresh();
+    public void onAttach(Context context) {
+        super.onAttach(context);
         setActionBar();
+        initPullToRefresh();
     }
 
     @Override
     protected View getSuccessView() {
+        setPullRefreshView();
         handler = new Handler();
-//        list = (ArrayList<T>) requestData();
         adapter = new MyAdapter();
         listView.setAdapter(adapter);
         return refreshListView;
@@ -86,17 +84,8 @@ public abstract class BaseListFragment<T> extends BaseFragment {
      * 初始化PullToRefresh
      */
     public void initPullToRefresh() {
-        /*
-         * 1.初始化refresListView,设置状态改变监听
-		 */
         refreshListView = (PullToRefreshListView) View.inflate(getActivity(),
                 R.layout.ptr_listview, null);
-        // 设置两边都可以啦，默认只有上拉
-        if(list.size()>= ConstantUtils.MAX_ITEM_LOAD_MORE){
-            refreshListView.setMode(PullToRefreshBase.Mode.BOTH);
-        }else{
-            refreshListView.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
-        }
         refreshListView.setOnRefreshListener(new PullToRefreshBase.OnRefreshListener<ListView>() {
             /**
              * 上拉刷新和下拉加载更多都会执行该方法
@@ -109,21 +98,26 @@ public abstract class BaseListFragment<T> extends BaseFragment {
                 }
                 // 上拉加载更多
                 else {
-                    // 请求数据，并根据当前状态刷新列表，如果加载更多请求数据失败，可以显示加载失败页面
+                    // 加载更多
                     loadMore();
                 }
             }
         });
-        /*
-         * 2. 获取普通的ListView设置adapter
-		 */
         listView = refreshListView.getRefreshableView();
-        // listview的优化设置
         listView.setDividerHeight(0);
         listView.setSelector(android.R.color.transparent);
         listView.setDescendantFocusability(ViewGroup.FOCUS_BLOCK_DESCENDANTS);
     }
-
+    /**
+     * 根据数据的多少调整是否需要加载更多，因为在数据不够一页的时候，加载更多有bug
+     */
+    private void setPullRefreshView() {
+        if(list.size()>= ConstantUtils.MAX_ITEM_LOAD_MORE){
+            refreshListView.setMode(PullToRefreshBase.Mode.BOTH);
+        }else{
+            refreshListView.setMode(PullToRefreshBase.Mode.PULL_FROM_START);
+        }
+    }
     protected abstract View setView(int position, View convertView, ViewGroup parent);
     protected abstract void setRefresh();
     protected abstract void loadMore();
