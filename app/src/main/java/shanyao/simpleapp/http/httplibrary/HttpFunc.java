@@ -1,8 +1,7 @@
-package shanyao.simpleapp.http;
+package shanyao.simpleapp.http.httplibrary;
 
 import rx.functions.Func1;
 import shanyao.simpleapp.application.SYApplication;
-import shanyao.simpleapp.bean.BaseBean;
 import shanyao.simpleapp.utils.ToastUtil;
 
 /**

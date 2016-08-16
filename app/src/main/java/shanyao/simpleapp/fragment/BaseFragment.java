@@ -70,7 +70,9 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
     public void onDestroy() {
         super.onDestroy();
         for(Subscriber subscriber:subscribers){
-            subscriber.unsubscribe();
+            if(!subscriber.isUnsubscribed()){
+                subscriber.unsubscribe();
+            }
         }
     }
 

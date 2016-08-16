@@ -1,4 +1,4 @@
-package shanyao.simpleapp.http;
+package shanyao.simpleapp.http.httplibrary;
 
 import android.app.ProgressDialog;
 import android.content.Context;
@@ -13,11 +13,11 @@ import shanyao.simpleapp.utils.ToastUtil;
  *
  * 加载对话框的请求
  */
-public abstract class ProgressSubscribe<T> extends Subscriber<T>{
+public abstract class SubscriberProgress<T> extends Subscriber<T>{
     private Context context;
     private ProgressDialog pdLoading;
 
-    public ProgressSubscribe(Context context) {
+    public SubscriberProgress(Context context) {
         this.context = context;
     }
 

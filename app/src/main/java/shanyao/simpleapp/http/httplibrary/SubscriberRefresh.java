@@ -1,4 +1,4 @@
-package shanyao.simpleapp.http;
+package shanyao.simpleapp.http.httplibrary;
 
 import java.util.List;
 
@@ -13,12 +13,12 @@ import shanyao.simpleapp.utils.ToastUtil;
  * <p/>
  * 刷新三种请求状态
  */
-public class RefreshSubscribe<T> extends Subscriber<T> {
+public class SubscriberRefresh<T> extends Subscriber<T> {
     private BaseListFragment fragment;
     private boolean isRefresh;
     private OnSubscribeListener<T> listener;
 
-    public RefreshSubscribe(BaseListFragment fragment, boolean isRefresh, OnSubscribeListener<T> listener) {
+    public SubscriberRefresh(BaseListFragment fragment, boolean isRefresh, OnSubscribeListener<T> listener) {
         this.fragment = fragment;
         this.isRefresh = isRefresh;
         this.listener = listener;

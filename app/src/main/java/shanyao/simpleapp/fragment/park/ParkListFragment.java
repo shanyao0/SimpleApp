@@ -28,13 +28,7 @@ public class ParkListFragment extends BaseListFragment<ParkBean> {
         params.put("rows", String.valueOf(ConstantUtils.PAGER_ROWS));
         params.put("latitude", String.valueOf(39.861716));
         params.put("longitude", String.valueOf(116.426576));
-//        new HttpApis().getPark(params,new RefreshSubscribe<List<ParkBean>>(this) {
-//            @Override
-//            public void onNext(List<ParkBean> parkBeen) {
-//                list = (ArrayList<ParkBean>) parkBeen;
-//                refreshPage(ConstantUtils.STATE_SUCCESSED);
-//            }
-//        });
+
         return ConstantUtils.STATE_LOADING;
     }
 

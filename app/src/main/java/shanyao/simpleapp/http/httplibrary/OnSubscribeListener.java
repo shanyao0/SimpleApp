@@ -1,4 +1,4 @@
-package shanyao.simpleapp.http;
+package shanyao.simpleapp.http.httplibrary;
 
 /**
  * Created by zs on 2016/8/15.

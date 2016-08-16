@@ -15,9 +15,10 @@ import shanyao.simpleapp.R;
 import shanyao.simpleapp.bean.ParkBean;
 import shanyao.simpleapp.fragment.BaseListFragment;
 import shanyao.simpleapp.http.HttpApis;
-import shanyao.simpleapp.http.OnSubscribeListener;
-import shanyao.simpleapp.http.RefreshSubscribe;
-import shanyao.simpleapp.http.ResponseSubscribe;
+import shanyao.simpleapp.http.httplibrary.OnSubscribeListener;
+import shanyao.simpleapp.http.httplibrary.SubscriberRefresh;
+import shanyao.simpleapp.http.httplibrary.RequestParams;
+import shanyao.simpleapp.http.httplibrary.SubscriberResponse;
 import shanyao.simpleapp.utils.ConstantUtils;
 import shanyao.simpleapp.utils.JsonParseUtil;
 import shanyao.simpleapp.utils.LogUtils;
@@ -30,7 +31,7 @@ public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
     private int page = 2;
     @Override
     protected Object requestData() {
-        new HttpApis().getPark(getParams(1), addSubscriber(new ResponseSubscribe<List<ParkBean>>(this) {
+        new HttpApis().getPark(getParams(1), addSubscriber(new SubscriberResponse<List<ParkBean>>(this) {
             @Override
             public void onNext(List<ParkBean> parkBeen) {
                 list = (ArrayList<ParkBean>) parkBeen;
@@ -68,7 +69,7 @@ public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
 
     @Override
     protected void setRefresh() {
-        new HttpApis().getPark(getParams(1), addSubscriber(new RefreshSubscribe<>(this, true, new OnSubscribeListener<List<ParkBean>>() {
+        new HttpApis().getPark(getParams(1), addSubscriber(new SubscriberRefresh<>(this, true, new OnSubscribeListener<List<ParkBean>>() {
             @Override
             public void onNext(List<ParkBean> parkBeen) {
                 list = (ArrayList<ParkBean>) parkBeen;
@@ -80,7 +81,7 @@ public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
 
     @Override
     protected void loadMore() {
-        new HttpApis().getPark(getParams(page), addSubscriber(new RefreshSubscribe<>(this, false, new OnSubscribeListener<List<ParkBean>>() {
+        new HttpApis().getPark(getParams(page), addSubscriber(new SubscriberRefresh<>(this, false, new OnSubscribeListener<List<ParkBean>>() {
             @Override
             public void onNext(List<ParkBean> parkBeen) {
                 list.addAll(parkBeen);
@@ -123,12 +124,12 @@ public class UnusualOpenFragment extends BaseListFragment<ParkBean> {
     }
 
     private HashMap<String, String> getParams(int page) {
-        HashMap<String, String> params = new HashMap<>();
-        params.put("page", String.valueOf(page));
-        params.put("sortType", String.valueOf(1));
-        params.put("rows", String.valueOf(ConstantUtils.PAGER_ROWS));
-        params.put("latitude", String.valueOf(39.861716));
-        params.put("longitude", String.valueOf(116.426576));
-        return params;
+        RequestParams params = new RequestParams();
+        params.put("page", page);
+        params.put("sortType", 1);
+        params.put("rows", ConstantUtils.PAGER_ROWS);
+        params.put("latitude", 39.861716);
+        params.put("longitude", 116.426576);
+        return params.getParamsMap();
     }
 }

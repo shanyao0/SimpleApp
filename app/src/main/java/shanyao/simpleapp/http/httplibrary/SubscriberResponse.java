@@ -1,4 +1,4 @@
-package shanyao.simpleapp.http;
+package shanyao.simpleapp.http.httplibrary;
 
 import rx.Subscriber;
 import shanyao.simpleapp.application.SYApplication;
@@ -12,10 +12,10 @@ import shanyao.simpleapp.utils.ToastUtil;
  *
  * 一般请求
  */
-public abstract class ResponseSubscribe<T> extends Subscriber<T>{
+public abstract class SubscriberResponse<T> extends Subscriber<T>{
     private BaseFragment fragment;
 
-    public ResponseSubscribe(BaseFragment fragment) {
+    public SubscriberResponse(BaseFragment fragment) {
         this.fragment = fragment;
     }
 

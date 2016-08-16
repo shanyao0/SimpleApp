@@ -8,8 +8,10 @@ import retrofit2.adapter.rxjava.RxJavaCallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 import rx.Subscriber;
 import shanyao.simpleapp.application.SYApplication;
-import shanyao.simpleapp.bean.BaseBean;
+import shanyao.simpleapp.http.httplibrary.BaseBean;
 import shanyao.simpleapp.bean.ParkBean;
+import shanyao.simpleapp.http.httplibrary.HttpFunc;
+import shanyao.simpleapp.http.httplibrary.HttpSchedulers;
 
 /**
  * Created by zs on 16/3/9.

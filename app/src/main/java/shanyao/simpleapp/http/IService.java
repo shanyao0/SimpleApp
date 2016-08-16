@@ -6,7 +6,7 @@ import java.util.Map;
 import retrofit2.http.GET;
 import retrofit2.http.QueryMap;
 import rx.Observable;
-import shanyao.simpleapp.bean.BaseBean;
+import shanyao.simpleapp.http.httplibrary.BaseBean;
 import shanyao.simpleapp.bean.ParkBean;
 
 /**
